@@ -1,0 +1,19 @@
+{
+  "name": "db-and-api-interfaces",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/shared/db-and-api-interfaces/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/shared/db-and-api-interfaces",
+        "main": "libs/shared/db-and-api-interfaces/src/index.ts",
+        "tsConfig": "libs/shared/db-and-api-interfaces/tsconfig.lib.json",
+        "assets": ["libs/shared/db-and-api-interfaces/*.md"]
+      }
+    }
+  }
+}
